@@ -5,6 +5,7 @@ import SetGame from '../components/SetGame';
 import ResetButton from '../components/ResetButton';
 import WinCount from '../components/WinCount';
 import LooseCount from '../components/LooseCount';
+import HangingImage from '../components/HangingImage';
 
 const Layout = props => {
 
@@ -22,6 +23,8 @@ const Layout = props => {
   const [win, setWin] = useState(0);
 
   const [loose, setLoose] = useState(0);
+
+  const [hanging, setHanging] = useState(7)
   //
   if (userWord)
     return (
@@ -35,6 +38,9 @@ const Layout = props => {
           loose={loose}
           userWord={userWord}
         />}
+        {Boolean(hanging) && <HangingImage
+          hanging={hanging} />
+          }
         {userWord !== displayWord && Boolean(score) && <Game
           score={score}
           setScore={setScore}
@@ -47,6 +53,8 @@ const Layout = props => {
           setUserLetter={setUserLetter}
           displayWord={displayWord}
           setDisplayWord={setDisplayWord}
+          hanging={hanging}
+          setHanging={setHanging}
           />}
           <ResetButton
             setScore={setScore}

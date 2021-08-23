@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 349.5 404">
+  <defs>
+    <style>
+      .cls-1{
+        fill:none;
+        stroke:#000;
+        stroke-miterlimit:10;
+      }    
+    </style>
+  </defs>
+  <g id="Calque_2" data-name="Calque 2">
+    <g id="Calque_1-2" data-name="Calque 1">
+      <line class="cls-1" x1="174.5" y1="364.5" x2="241.5" y2="297.5"/>
+      <line class="cls-1" x1="308.5" y1="364.5" x2="241.5" y2="297.5"/>
+      <line class="cls-1" x1="241.5" y1="215.5" x2="308.5" y2="148.5"/>
+      <line class="cls-1" x1="241.5" y1="215.5" x2="174.5" y2="148.5"/>
+      <line class="cls-1" x1="241.5" y1="298" x2="241.5" y2="165"/>
+      <line class="cls-1" x1="242" y1="0.5" x2="1" y2="0.5"/>
+      <line class="cls-1" x1="349.5" y1="403.5" y2="403.5"/>
+      <line class="cls-1" x1="0.5" x2="0.5" y2="403.5"/>
+      <line class="cls-1" x1="57.5" y1="403.5" x2="0.5" y2="346.5"/>
+      <path d="M242.5,61A51.5,51.5,0,1,1,191,112.5,51.55,51.55,0,0,1,242.5,61m0-1A52.5,52.5,0,1,0,295,112.5,52.51,52.51,0,0,0,242.5,60Z"/>
+      <line class="cls-1" x1="241.5" y1="0.5" x2="241.5" y2="60.5"/>
+    </g>
+  </g>
+</svg>

@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import HangingImage from "../components/HangingImage";
 
 
-function Game({userWord, score, setScore, userLetter,setUserLetter, displayWord, setDisplayWord, setWin, win,setLoose, loose}){
+
+function Game({userWord, score, setScore, userLetter,setUserLetter, displayWord, setDisplayWord, setWin, win,setLoose, loose, hanging, setHanging}){
 
 
   const validateLetter = () => {
@@ -26,6 +28,8 @@ function Game({userWord, score, setScore, userLetter,setUserLetter, displayWord,
       else {
         alert('There is not the letter: ' + userLetter);
         setScore(score-=1);
+        setHanging(hanging-=1);
+
       } if (score === 0){
         setLoose(loose + 1);
       }
@@ -39,7 +43,9 @@ function Game({userWord, score, setScore, userLetter,setUserLetter, displayWord,
   return (
       <div className="display-word-to-guess">
         <h2>{ displayWord }</h2>
+        <HangingImage score={score} />
         <h2>You have {score} guess left</h2>
+
         <input
           type="text"
           value={userLetter}
